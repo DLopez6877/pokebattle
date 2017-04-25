@@ -28,21 +28,32 @@ $(document).ready(function () {
   $("#shock").click(function () {
     $("#pika-log").prepend("<li>Pikachu used Shock!</li>");
     cleanPikaLog();
+    $("#pikachu img").prop("src", "img/bolt.png");
+    setTimeout(function() {   $("#pikachu img").prop("src", "img/pikachu.png"); }, 1000);
   });
 
   $("#pika-tackle").click(function () {
     $("#pika-log").prepend("<li>Pikachu used Tackle!</li>");
     cleanPikaLog();
+    $("#pikachu img").prop("src", "img/pow.png");
+    setTimeout(function() {   $("#pikachu img").prop("src", "img/pikachu.png"); }, 1000);
+
   });
 
   $("#water-jet").click(function () {
     $("#squirtle-log").prepend("<li>Squirtle used Water Jet!</li>");
     cleanSquirtleLog();
+    $("#squirtle img").prop("src", "img/water.png");
+    setTimeout(function() {   $("#squirtle img").prop("src", "img/squirtle.png"); }, 1000);
+
   });
 
   $("#squirtle-tackle").click(function () {
     $("#squirtle-log").prepend("<li>Squirtle used Tackle!</li>");
     cleanSquirtleLog();
+    $("#squirtle img").prop("src", "img/pow.png");
+    setTimeout(function() {   $("#squirtle img").prop("src", "img/squirtle.png"); }, 1000);
+
   });
 
   //run away button to pop alert that the other wins and fade out their picture
