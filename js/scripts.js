@@ -20,27 +20,35 @@ $(document).ready(function () {
     $(".attack-panel").hide();
   });
 
-  $('#shock').click(function () {
+  $("#shock").click(function () {
     $("#pika-log").prepend("<li>Pikachu used Shock!</li>");
     cleanPikaLog();
   });
 
-  $('#pika-tackle').click(function () {
+  $("#pika-tackle").click(function () {
     $("#pika-log").prepend("<li>Pikachu used Tackle!</li>");
     cleanPikaLog();
   });
 
-  $('#water-jet').click(function () {
+  $("#water-jet").click(function () {
     $("#squirtle-log").prepend("<li>Squirtle used Water Jet!</li>");
     cleanSquirtleLog();
   });
 
-  $('#squirtle-tackle').click(function () {
+  $("#squirtle-tackle").click(function () {
     $("#squirtle-log").prepend("<li>Squirtle used Tackle!</li>");
     cleanSquirtleLog();
   });
 
   //run away button to pop alert that the other wins and fade out their picture
+  $("#pikachu .run-away").click(function() {
+    $("#pikachu img").animate({opacity: 0}, 950);
+    setTimeout(function() { alert("Squirtle has won!"); }, 1000);
+  });
 
+  $("#squirtle .run-away").click(function() {
+    $("#squirtle img").animate({opacity: 0}, 950);
+    setTimeout(function() { alert("Pikachu has won!"); }, 1000);
+  });
   //each attack or run away needs to pop info into log
 });
