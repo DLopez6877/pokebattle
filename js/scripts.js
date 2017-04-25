@@ -28,31 +28,31 @@ $(document).ready(function () {
   $("#shock").click(function () {
     $("#pika-log").prepend("<li>Pikachu used Shock!</li>");
     cleanPikaLog();
-    $("#pikachu img").prop("src", "img/bolt.png");
-    setTimeout(function() {   $("#pikachu img").prop("src", "img/pikachu.png"); }, 1000);
+    $("#squirtle img").prop("src", "img/bolt.png");
+    setTimeout(function() {   $("#squirtle img").prop("src", "img/squirtle.png"); }, 1000);
   });
 
   $("#pika-tackle").click(function () {
     $("#pika-log").prepend("<li>Pikachu used Tackle!</li>");
     cleanPikaLog();
-    $("#pikachu img").prop("src", "img/pow.png");
-    setTimeout(function() {   $("#pikachu img").prop("src", "img/pikachu.png"); }, 1000);
+    $("#squirtle img").prop("src", "img/pow.png");
+    setTimeout(function() {   $("#squirtle img").prop("src", "img/squirtle.png"); }, 1000);
 
   });
 
   $("#water-jet").click(function () {
     $("#squirtle-log").prepend("<li>Squirtle used Water Jet!</li>");
     cleanSquirtleLog();
-    $("#squirtle img").prop("src", "img/water.png");
-    setTimeout(function() {   $("#squirtle img").prop("src", "img/squirtle.png"); }, 1000);
+    $("#pikachu img").prop("src", "img/water.png");
+    setTimeout(function() {   $("#pikachu img").prop("src", "img/pikachu.png"); }, 1000);
 
   });
 
   $("#squirtle-tackle").click(function () {
     $("#squirtle-log").prepend("<li>Squirtle used Tackle!</li>");
     cleanSquirtleLog();
-    $("#squirtle img").prop("src", "img/pow.png");
-    setTimeout(function() {   $("#squirtle img").prop("src", "img/squirtle.png"); }, 1000);
+    $("#pikachu img").prop("src", "img/pow.png");
+    setTimeout(function() {   $("#pikachu img").prop("src", "img/pikachu.png"); }, 1000);
 
   });
 
@@ -68,3 +68,29 @@ $(document).ready(function () {
   });
   //each attack or run away needs to pop info into log
 });
+
+
+// $(document).ready(function () {
+//
+//   $(document).keypress(function(e){
+//     console.log(e);
+//       if (e.which == 83){
+//           console.log(e.which);
+//       } else if(e.which === 68){
+//         console.log(e.which);
+//       } else if(e.which === 90){
+//         console.log(e.which);
+//       } else if(e.which === 88){
+//         console.log(e.which);
+//       } else if(e.which === 72){
+//         console.log(e.which);
+//       } else if(e.which === 74){
+//         console.log(e.which);
+//       } else if(e.which === 66){
+//         console.log(e.which);
+//       } else if(e.which === 78){
+//         console.log(e.which);
+//       }
+//   });
+// });
+//keybinds
