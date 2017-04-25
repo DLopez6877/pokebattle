@@ -1,8 +1,41 @@
+@font-face {
+  font-family: "Pokemon";
+  src: url('../fonts/pokemon-hollow.ttf');
+}
+
+@font-face {
+  font-family: "PokemonBlack";
+  src: url('../fonts/pokemon-solid.ttf');
+}
+
 img {
   width: 70%;
   margin: 0 auto;
 }
 
 .initially-hidden {
-  display: none;
+  opacity: 0;
+}
+
+.btn {
+  width: 40%;
+  margin: 20px 2.5%;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.jumbotron h1 {
+  font-family: Pokemon;
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 11px;
+  text-shadow: 2px 2px 2px black;
+}
+
+h3 {
+  text-align: center;
+  font-family: PokemonBlack;
+  letter-spacing: 5px;
 }

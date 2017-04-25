@@ -3,21 +3,26 @@ $(document).ready(function () {
     $("#pika-log li:nth-child(7)").remove();
   };
 
+  $(".attack-panel .btn").prop('disabled', true);
+
   var cleanSquirtleLog = function () {
     $("#squirtle-log li:nth-child(7)").remove();
   };
 
   //fight button to toggle attacks
   $("#pikachu .fight-button").click(function () {
-    $("#pikachu .attack-panel").show();
+    $("#pikachu .attack-panel").animate({opacity: 1});
+    $('#pikachu .attack-panel .btn').prop('disabled', false);
   });
 
   $("#squirtle .fight-button").click(function () {
-    $("#squirtle .attack-panel").show();
+    $("#squirtle .attack-panel").animate({opacity: 1});
+    $('#pikachu .attack-panel .btn').prop('disabled', false);
   });
 
   $(".attack-panel .btn").click(function() {
-    $(".attack-panel").hide();
+    $(".attack-panel").animate({opacity: 0});
+    $(".attack-panel .btn").prop('disabled', true);
   });
 
   $("#shock").click(function () {
