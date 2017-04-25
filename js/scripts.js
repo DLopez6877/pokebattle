@@ -17,7 +17,7 @@ $(document).ready(function () {
 
   $("#squirtle .fight-button").click(function () {
     $("#squirtle .attack-panel").animate({opacity: 1});
-    $('#pikachu .attack-panel .btn').prop('disabled', false);
+    $('#squirtle .attack-panel .btn').prop('disabled', false);
   });
 
   $(".attack-panel .btn").click(function() {

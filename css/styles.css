@@ -22,20 +22,49 @@ img {
   margin: 20px 2.5%;
 }
 
-.jumbotron {
-  background-color: white;
+.container-fluid .jumbotron {
+  background-color: lightblue;
+  width: 100%;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  box-shadow: 2px 2px 3px black;
 }
 
 .jumbotron h1 {
-  font-family: Pokemon;
+  color: white;
+  font-family: PokemonBlack;
   text-align: center;
   font-size: 100px;
   letter-spacing: 11px;
   text-shadow: 2px 2px 2px black;
 }
 
+body, .container-fluid {
+  background-color: lightyellow;
+  margin: 0;
+  padding: 0;
+  border-radius: none;
+  overflow-x: hidden;
+}
+
 h3 {
   text-align: center;
   font-family: PokemonBlack;
   letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+
+.attack-panel .btn {
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 9px;
+  margin-left: -40px;
 }
