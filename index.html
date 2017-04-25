@@ -18,26 +18,34 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-6" id="pikachu">
           <img class="img-responsive" src="img/pikachu.png" alt="a picture of pikachu" />
 
-          <span class="btn btn-danger pull-left">Fight</span>
-          <span class="btn btn-default initially-hidden">Shock</span>
-          <span class="btn btn-default initially-hidden">Tackle</span>
+          <span class="btn btn-danger fight-button">Fight</span>
 
-          <span class="btn btn-warning pull-left">Run Away</span>
+          <span class="btn btn-warning">Run Away</span>
 
+          <div class="attack-panel initially-hidden">
+            <span class="btn btn-default" id="shock">Shock</span>
+            <span class="btn btn-default" id="pika-tackle">Tackle</span>
+          </div>
+          <br>
           <ul id="pika-log">
 
           </ul>
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6" id="squirtle">
           <img class="img-responsive" src="img/squirtle.png" alt="a picture of squirtle" />
-          <span class="btn btn-info pull-right">Run Away</span>
-          <span class="btn btn-default initially-hidden">Water Jet</span>
-          <span class="btn btn-default initially-hidden">Tackle</span>
 
-          <span class="btn btn-danger pull-right">Fight</span>
+          <span class="btn btn-danger fight-button">Fight</span>
+
+          <span class="btn btn-info">Run Away</span>
+
+
+          <div class="attack-panel initially-hidden">
+            <span class="btn btn-default" id="water-jet">Water Jet</span>
+            <span class="btn btn-default" id="squirtle-tackle">Tackle</span>
+          </div>
 
           <ul id="squirtle-log">
 
